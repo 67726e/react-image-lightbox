@@ -1,6 +1,6 @@
 {
-  "name": "react-image-lightbox",
-  "version": "5.1.4",
+  "name": "react-image-lightbox-legacy",
+  "version": "6.0.0",
   "description": "A lightbox component for React.js",
   "scripts": {
     "build": "rollup -c",
@@ -10,7 +10,7 @@
     "start": "parcel examples/cats/index.html",
     "lint": "eslint .",
     "prettier": "prettier --write \"./**/*.{md,js,css}\" \"!./{build,dist}/**\" \"!./style.css*\"",
-    "prepublishOnly": "yarn run lint && yarn run test && yarn run build",
+    "prepublishOnly": "npm run lint && npm run test && npm run build",
     "test": "jest",
     "test:watch": "jest --watchAll",
     "deploy": "yarn run build:demo && gh-pages -d build",
@@ -46,8 +46,8 @@
     "react-modal": "^3.11.1"
   },
   "peerDependencies": {
-    "react": "16.x || 17.x",
-    "react-dom": "16.x || 17.x"
+    "react": "16.x || 17.x || 18.x",
+    "react-dom": "16.x || 17.x || 18.x"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
